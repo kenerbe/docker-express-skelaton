@@ -22,7 +22,7 @@ Create the Docker image as follows (substitue "web-app" with your choice of name
     $ sudo docker build -t web-app:v1 .
 
 This creates the docker image for this node-express application on the node:slim
-Docker-hub image.  You should be able see this by using "sudo docker images".
+Docker Hub image.  You should be able see this by using "sudo docker images".
 
 Run your newly created dockerized web-app as follows:
 
@@ -31,7 +31,8 @@ Run your newly created dockerized web-app as follows:
 This runs your web-app in a Docker container on your host with the container
 port 3000 mapped to the host port 33000 - http://localhost:33000/.  This
 port mapping comes in handy when running multiple containers (via
-Kubernetes/mimikube for example).  The running docker container can be seen
-by running the "sudo docker ps" command.  To stop the running container, run
-the "sudo docker stop xxxx" command where "xxxx" is the container ID or name
-of the running container.
+Kubernetes/mimikube for example). To try this, run a second container with a
+33001:3000 mapping ("sudo docker run -p 33001:3000 -d web-app:v1") - http://localhost:33001/.
+
+The running docker container(s) can be seen by running the "sudo docker ps" command.
+To stop a running container, run the "sudo docker stop xxxx" command where "xxxx" is the container ID or name of the running container.
