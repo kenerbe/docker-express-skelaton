@@ -1,4 +1,4 @@
-# docker-express-skelaton
+# docker-express-skeleton
 Good starting point for any node-express Docker based web application including
 Kubernetes deployments.  
 
@@ -9,8 +9,8 @@ This was done on ubuntu 16.04, but should work on about anything.
 
 Install / set it up as follows:
 
-    $ git clone https://github.com/kenerbe/docker-express-skelaton.git
-    $ cd docker-express-skelaton
+    $ git clone https://github.com/kenerbe/docker-express-skeleton.git
+    $ cd docker-express-skeleton
     $ npm install
 
 This creates the basic node-express application than can be run on the host

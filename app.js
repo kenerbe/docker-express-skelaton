@@ -6,6 +6,8 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
+// Setup routes here step 1 of 2
+// Create coorisponding js files in ./routes folder
 var index = require('./routes/index');
 var users = require('./routes/users');
 
@@ -23,6 +25,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
+// Setup routes here step 2 of 2
 app.use('/', index);
 app.use('/users', users);
 

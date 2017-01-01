@@ -1,6 +1,7 @@
+# Use Docker Hub node:slim image
 FROM node:slim
 
-# Create app directory
+# Create app directory on container
 RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app
 
